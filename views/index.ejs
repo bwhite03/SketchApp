@@ -10,9 +10,13 @@
   <body>
     <canvas></canvas>
     <main>
-      <section class="colors">
-        <input class="color-picker" type="text" value="#171717" />
+      <section id="picker" class="colors"></section>
+      <section class="thickness">
+        <input type="number" class="stroke-weight" value="3" />
       </section>
+      <button class="clear">X</button>
     </main>
+    <script src="https://unpkg.com/vanilla-picker@2"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
