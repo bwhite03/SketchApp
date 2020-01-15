@@ -2,6 +2,7 @@ const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 const clearButton = document.querySelector(".clear");
 const strokeWeight = document.querySelector(".stroke-weight");
+const thickness = document.querySelector(".thickness-click");
 const parent = document.querySelector("#picker");
 const picker = new Picker(parent);
 let isDrawing = false;
@@ -40,6 +41,15 @@ const resizeCanvas = () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 };
+
+thickness.addEventListener("click", () => {
+  if (strokeWeight.style.display === "block") {
+    strokeWeight.style.display = "none";
+  } else {
+    strokeWeight.style.display = "block";
+  }
+});
+
 window.addEventListener("resize", resizeCanvas);
 canvas.addEventListener("mousedown", start);
 canvas.addEventListener("mousemove", draw);
