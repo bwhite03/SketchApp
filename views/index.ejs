@@ -6,16 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sketch App</title>
     <link rel="stylesheet" href="/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/ccf1326a8d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <canvas></canvas>
     <main>
       <section id="picker" class="colors"></section>
       <section class="thickness">
-        <div class="thickness-click"></div>
+        <div class="thickness-click"><i class="fas fa-circle"></i></div>
         <input type="number" class="stroke-weight" value="3" />
       </section>
-      <button class="clear">X</button>
+      <button class="eraser"><i class="fas fa-eraser"></i></button>
+      <button class="clear"><i class="far fa-times-circle"></i></button>
     </main>
     <script src="https://unpkg.com/vanilla-picker@2"></script>
     <script src="/js/main.js"></script>
