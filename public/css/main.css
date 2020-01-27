@@ -106,3 +106,17 @@ section {
   outline: none;
   cursor: pointer;
 }
+
+.download {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 15px auto;
+  color: #171717;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: DodgerBlue;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
