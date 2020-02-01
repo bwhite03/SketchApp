@@ -8,7 +8,7 @@ const parent = document.querySelector("#picker");
 const picker = new Picker(parent);
 let isDrawing = false;
 let isErasing = false;
-let currentColor;
+let currentColor = "#000";
 
 picker.onChange = color => {
   parent.style.background = color.rgbaString;
