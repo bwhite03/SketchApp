@@ -2,8 +2,10 @@ const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 const clearButton = document.querySelector(".clear");
 const eraseButton = document.querySelector(".eraser");
+const downloadButton = document.querySelector(".download");
 const strokeWeight = document.querySelector(".stroke-weight");
 const thickness = document.querySelector(".thickness-click");
+const myImage = document.querySelector(".myImage");
 const parent = document.querySelector("#picker");
 const picker = new Picker(parent);
 let isDrawing = false;
@@ -60,6 +62,21 @@ eraseButton.addEventListener("click", () => {
     ctx.strokeStyle = "#f3f3f3";
   } else {
     ctx.strokeStyle = currentColor;
+  }
+});
+
+downloadButton.addEventListener("click", () => {
+  //IE/EDGE
+  if (window.navigator.msSaveBlob) {
+    window.navigator.msSaveBlob(canvas.msToBlob(), "canvas-image.png");
+  } else {
+    //Chrome/FIREFOX
+    const a = document.createElement("a");
+    document.body.appendChild(a);
+    a.href = canvas.toDataURL();
+    a.download = "canvas-image.png";
+    a.click();
+    document.body.removeChild(a);
   }
 });
 
