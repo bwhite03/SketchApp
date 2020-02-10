@@ -15,6 +15,7 @@ let currentColor = "#000";
 picker.onChange = color => {
   parent.style.background = color.rgbaString;
   currentColor = ctx.strokeStyle = color.rgbaString;
+  canvas.style.cursor = "url('../assets/cursor.cur'), auto";
 };
 
 const start = e => {
@@ -60,8 +61,10 @@ eraseButton.addEventListener("click", () => {
 
   if (isErasing === true) {
     ctx.strokeStyle = "#f3f3f3";
+    canvas.style.cursor = "url('../assets/eraser.cur'), auto";
   } else {
     ctx.strokeStyle = currentColor;
+    canvas.style.cursor = "url('../assets/cursor.cur'), auto";
   }
 });
 

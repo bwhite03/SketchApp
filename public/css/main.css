@@ -1,3 +1,7 @@
+canvas {
+  cursor: url("/assets/cursor.cur"), auto;
+}
+
 body {
   margin: 0;
   padding: 0;
