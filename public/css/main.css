@@ -34,28 +34,9 @@ section {
   cursor: pointer;
 }
 
-.color-picker {
-  display: none;
-  width: 200px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translateY(-50%);
-}
-
-.color-picker:hover {
-  display: block;
-  color: yellow;
-}
-
-.color-picker:focus {
-  display: block;
-}
-
 .thickness {
   position: relative;
-  background-color: #f3f3f3;
+  background-color: #baffc9;
   cursor: pointer;
 }
 
@@ -90,7 +71,7 @@ section {
   color: #171717;
   font-size: 20px;
   font-weight: 900;
-  background-color: pink;
+  background-color: #ffb3ba;
   border: none;
   outline: none;
   cursor: pointer;
@@ -105,7 +86,7 @@ section {
   color: #171717;
   font-size: 20px;
   font-weight: 900;
-  background-color: #ffce00;
+  background-color: #ffdfba;
   border: none;
   outline: none;
   cursor: pointer;
@@ -119,7 +100,7 @@ section {
   color: #171717;
   font-size: 20px;
   font-weight: 900;
-  background-color: DodgerBlue;
+  background-color: #bae1ff;
   border: none;
   outline: none;
   cursor: pointer;
